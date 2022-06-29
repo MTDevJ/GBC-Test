@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Account</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>GBC_Order__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>GBC User</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>GBC_User</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>GBC_SearchComponentController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>GBC_SearchComponentControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>gbc_searxh_component</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>GBC_New_Order</members>
+        <name>FlexiPage</name>
+    </types>
+    <version>55.0</version>
+</Package>

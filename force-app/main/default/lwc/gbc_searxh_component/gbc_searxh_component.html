@@ -1,0 +1,36 @@
+<template>
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="comboboxId-1">Relates To</label>
+        <div class="slds-form-element__control">
+            <div class="slds-combobox_container">
+                <div id="box" class={comboboxClass} aria-expanded="true" aria-haspopup="listbox" role="combobox">
+                    <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                        <lightning-input class={inputElementClass} type="search" id="comboboxId-1" value={selectedName}
+                            onclick={handleElementClick} onblur={onBlur} onchange={handleSearchValueChange}
+                            variant="label-hidden" autocomplete="off" placeholder='Search'>
+                        </lightning-input>
+                    </div>
+                    <template if:true={accounts.data}>
+                        <div id="listboxId" class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid"
+                            role="listbox">
+                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                <template for:each={accounts.data} for:item="account">
+                                    <li key={account.Id} onclick={onSelect} data-id={account.Id} role="presentation"
+                                        class="slds-listbox__item">
+                                        <span class="slds-lookup__item-action slds-lookup__item-action--label"
+                                            role="option">
+                                            <lightning-icon class="slds-icon slds-icon--small slds-icon-text-default"
+                                                icon-name="standard:account" alternative-text='' size="small">
+                                            </lightning-icon>
+                                            <span class="slds-truncate">{account.Name}</span>
+                                        </span>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
