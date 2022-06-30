@@ -35,7 +35,7 @@ export default class Gbc_searxh_component extends LightningElement {
     }
 
     onBlur() {
-        this.blurTimeout = setTimeout(() =>  {this.comboboxClass = 'slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-has-focus'}, 300);
+       this.blurTimeout = setTimeout(() =>  {this.comboboxClass = 'slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-has-focus'}, 300);
     }
 
     onSelect(event) {

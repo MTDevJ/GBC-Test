@@ -1,0 +1,31 @@
+<template>
+  <div class="slds-card slds-p-around_small order-box">
+    <lightning-record-edit-form object-api-name="GBC_Order__c" onsuccess={handleOrderCreated}>
+      <div class="slds-grid">
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input-field field-name={nameField} value={nameValue}>
+          </lightning-input-field>
+          <lightning-input-field field-name={periodField} value={periodValue}>
+          </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input-field field-name={typeField} value={typeValue}>
+          </lightning-input-field>
+          <lightning-input-field field-name={priceField} value={priceValue}>
+          </lightning-input-field>
+        </div>
+      </div>
+      <div class="slds-col slds-size_1-of-1">
+        <div style="display: none;">
+          <lightning-input-field field-name={accountField} value={accountValue}>
+          </lightning-input-field>
+        </div>
+        <div class="slds-p-bottom_small">
+          <c-gbc_searxh_component id="horizontal-input-id-05" onaccountselected = {handleSelectedAccount}></c-gbc_searxh_component>
+        </div>
+      </div>
+      <lightning-button class="slds-m-top_small" type="submit" label="Create new">
+      </lightning-button>
+    </lightning-record-edit-form>
+  </div>
+</template>
