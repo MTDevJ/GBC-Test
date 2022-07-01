@@ -3,8 +3,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>gbc_searxh_component</componentName>
-                <identifier>c_gbc_searxh_component</identifier>
+                <componentName>gbc_order_component</componentName>
+                <identifier>c_gbc_order_component</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>
