@@ -219,6 +219,10 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <tabVisibilities>
+        <tab>GBC_New_Order</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>

@@ -36,5 +36,9 @@
         <members>GBC_Team</members>
         <name>CustomApplication</name>
     </types>
+    <types>
+        <members>GBC_New_Order</members>
+        <name>CustomTab</name>
+     </types>
     <version>55.0</version>
 </Package>
